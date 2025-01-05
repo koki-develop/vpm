@@ -1,5 +1,5 @@
 root_url = "https://vpm.vlang.io"
-is_dev = true
+is_dev = false
 dev_user = "test_user"
 
 [jwt]
