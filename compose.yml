@@ -1,0 +1,18 @@
+services:
+  vpm:
+    build:
+      context: .
+      dockerfile: docker/Dockerfile
+    ports:
+      - 8081:8081
+    volumes:
+      - .:/app
+    working_dir: /app
+  db:
+    image: postgres
+    ports:
+      - 5432:5432
+    environment:
+      POSTGRES_DB: vpm
+      POSTGRES_USER: vpm
+      POSTGRES_PASSWORD: vpm
