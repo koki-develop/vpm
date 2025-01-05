@@ -13,8 +13,9 @@ secret = ""
 port = 8081
 
 [postgres]
-host = "localhost"
+host = "db"
 port = 5432
 user = "vpm"
 password = "vpm"
 db = "vpm"
+
