@@ -1,5 +1,7 @@
 services:
   vpm:
+    depends_on:
+      - db
     build:
       context: .
       dockerfile: docker/Dockerfile
